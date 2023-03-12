@@ -1,0 +1,9 @@
+
+
+#https://www.meteomatics.com/en/api/available-parameters/marine-parameters/wave-height/
+###hourly wave height for next 5 days-USE THIS ONE 
+get https://marine-api.open-meteo.com/v1/marine?latitude=41.55&longitude=-71.29&hourly=wave_height&timezone=America%2FNew_York
+
+###hourly weather info
+#going to need a lookup chart for wind direction or look for another site
+get https://api.open-meteo.com/v1/forecast?latitude=41.55&longitude=-71.29&hourly=temperature_2m,windspeed_10m,winddirection_10m&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch
